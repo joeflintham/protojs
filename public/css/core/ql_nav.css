@@ -1,0 +1,12 @@
+
+
+	#jbe_jalo_logged_in, 
+	#jbe_jalo_logged_in_2, 
+	#upload_cv_logged_in,
+	#job_alerts_logged_in,
+	#firstNav #accountMenu #navLogoutLink,
+	#firstNav #accountMenu #navMyjobsiteLink {display: none}
+	#accountMenu { width:168px; }
+
+
+

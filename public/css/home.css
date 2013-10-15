@@ -1,0 +1,337 @@
+[%# $Id: home.css 63979 2013-07-09 14:13:51Z axavier $ %]
+/* [%-# @(#)home.css	1.72 18:46:22,13/05/13 (yy/mm/dd) -%] */
+
+/*** NEW HOMEPAGE 2011 REDESIGN STYLES ***/ 
+
+ul li {line-height:100%;}
+
+#floodlightTracking {display:none;}
+
+input[type="submit"]{cursor:pointer;}
+
+.hidden {display:none;}
+
+.roundedcorner{border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px;}
+.dropshadow{text-shadow: 1px 1px 0px  #333333; -moz-text-shadow: 1px 1px 0px #333333; -webkit-text-shadow: 1px 1px 0px #333333; -o-text-shadow: 1px 1px 0px #333333;}
+
+.webFont {font-family:FranklinGothicTL-ExtraCn; font-weight:normal; font-style:normal; color:#333; font-size:24px; text-transform:uppercase; margin-bottom:4px;}
+
+#middleContainer {padding-top:0;}
+#content {padding-top:35px;}
+#content a {text-decoration:underline;}
+#content a:hover {text-decoration:none;}
+
+.socialNetworks {position:absolute; top:35px; right:-140px;}
+.socialNetworks li {float:left; padding:0; background:none; margin-left:3px;}
+
+#sideBanner {top:90px;}
+
+.one {float:left; width:100%;}
+
+/*** SEARCH BAR ***/
+
+.searchContainer {background: #004582; position:relative; color:#fff; width:100%; min-width:960px;}
+.searchContainer .bgImage {background:url("/img/homepage-2011/search-image-bg.png") no-repeat bottom center;}
+.searchContainer .topShadow {}
+.searchContainer .bottomShadow {}
+
+#searchBox {width:770px; padding:30px 0 19px 10px; }
+
+.heading{ width:770px; }
+#psform{ width:100%; }
+
+#searchBox h2 {background:url("/img/homepage-2011/find-a-job-new.gif") no-repeat top left; float:left; width:164px; display: block; height: 0 !important; margin-bottom:8px; margin-top:2px;margin-left:3px;overflow: hidden; padding-top:48px;}
+#searchBox p.jobCount {float: right; font-size: 18px;   font-style: italic;    padding-top:12px; padding-right: 160px; text-transform: uppercase;     letter-spacing: 0.5px; line-height:18px;; color:#fff; margin:0px; font-family: FranklinGothicTL-ExtraCn; font-weight:normal;}
+#searchBox p.jobCount em {color:#fea814; padding:0 3px 0 3px; font-weight:normal;}
+#searchBox p.jobCount em.new {padding:0 3px 0 7px;}
+#searchBox .searchFields {padding-bottom:10px; width:770px;}
+#searchBox fieldset {clear:both; width:770px;}
+#searchBox input, #searchBox select {color:#333;}
+#searchBox .formField {width:280px; padding:0 11px 0 9px; float:left;}
+#searchBox .formField label {display:block; padding:5px 0 8px 0; font-weight:normal; font-size:13px; }
+#searchBox .formField input {font-size:18px; padding:11px 5px; margin:0px; width:270px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; border:none; box-shadow:1px 1px 3px #b3b3b3 inset; -moz-box-shadow:1px 1px 3px #b3b3b3 inset; -webkit-box-shadow:1px 1px 3px #b3b3b3 inset; -o-box-shadow:1px 1px 3px #b3b3b3 inset;}
+#searchBox .searchBtn {background:url("/img/button_orange.png") #ea7a01; padding:9px 28px 12px 28px; font-size:18px; border:none; font-weight:bold; margin-top:26px; margin-left:10px;color:#ffffff; cursor:pointer;  border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px; -o-border-radius:25px; *width:110px; box-shadow:2px 2px 1px #EF9232 inset, -2px -2px 1px #A75600 inset; -moz-box-shadow:2px 2px 1px #ef9232 inset, -2px -2px 1px #A75600 inset; -webkit-box-shadow:2px 2px 1px #ef9232 inset, -2px -2px 1px #A75600 inset; -o-box-shadow:2px 2px 1px #ef9232 inset, -2px -2px 1px #A75600 inset; float:left;text-shadow: 1px 1px #ce4f00;font-weight:normal;}
+
+#advancedSearch {display:none; padding-left:5px;}
+#advancedSearch .salaryField {clear:both; padding:10px 0; width:100%; float:left;}
+#advancedSearch .salaryField.typeField {width:auto;}
+
+#advancedSearch .loaderImg {float:left;}
+#advancedSearch label {float:left; font-size:13px; margin-right:10px; line-height:24px;}
+#advancedSearch .typeField label {line-height:20px; margin-right:25px;}
+#advancedSearch .typeField input {border:none; margin-left:0; margin-right:5px;}
+#advancedSearch select {border: none; border-radius: 3px 3px 3px 3px; font-weight: bold; margin:0 10px 0 0; padding:5px; width: 176px; float:left;}
+
+#advancedSearch p {clear:both; color:#fff; font-size:13px; margin-bottom:0; padding:10px 0; text-shadow: none;}
+#advancedSearch p a {color:#fff; text-decoration:underline;}
+#advancedSearch p a:hover {text-decoration:none;}
+
+#searchBox .advancedSearch {width:700px; padding:17px 12px 4px 1px; margin-top:9px;margin-left:8px; border-top:1px solid #336A9B; clear:both;}
+#searchBox .advancedSearch h3 {float:left; font-weight:bold; font-size:13px; margin-bottom:0px;}
+#searchBox .advancedSearch h3 a {color:#ffffff; text-decoration:none; font-size:13px; background: url("/img/homepage-2011/plus_minus_new.gif") no-repeat 0 1px; padding:0px 0 0 20px; font-weight: normal !important;}
+#searchBox .advancedSearch h3 a.toggled {background-position: 0 -15px;}
+#searchBox .advancedSearch h1 {float:right; font-size:18px; font-style:italic; font-weight:normal;  padding:0; text-transform:uppercase; letter-spacing:0.5px; color:#fff; margin:0; border-bottom:none; font-family: FranklinGothicTL-ExtraCn; font-weight:normal;}
+@media all and (resolution = 0dpi) {
+  :root #searchBox p.jobCount, :root #new-homepage #searchBox .advancedSearch h1 {  font-size:12px; }
+ }
+@media all\0 { 
+#searchBox p.jobCount, #new-homepage #searchBox .advancedSearch h1 { font-size:16px; }
+} /* IE8 uses \0 */
+
+/*** TAB SECTION ***/
+	
+#tab-area {float: left; width: 810px; padding-bottom: 20px; margin-top:18px;}
+#tab-area ul li {list-style-type:none;background-image:none;}
+#tab-area h3 {text-transform:uppercase;	display:block; font-size:24px;}
+#tab-area .tab-head, #tab-area .tab-title {float:right; margin-top:-43px; position:relative; display:block; margin-bottom:-10px;}
+#tab-area .single-tab {padding-bottom:5px; margin-top:40px;}
+#tab-area .tab-body {z-index:49; margin-top:-1px;padding:5px; background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; border-radius: 5px 0 5px 5px;}						
+#tab-area .tab-section {margin-top:10px;}
+#tab-area .sections .tab-body {border-radius: 0px 5px 5px 5px;}
+#tab-area .tab-head ul {float:right;}		
+#tab-area .tab-head ul li {line-height:100%;}
+#tab-area .tab-head ul li.first {border-radius: 5px 0 0 0;border-left: 1px solid #ccc;}			
+#tab-area .tab-head ul li.last {border-radius: 0 5px 0 0;}				
+#tab-area .tab-head li, #tab-area .tab-title {float:left; background-color:#FFFFFF; border: 1px solid #CCCCCC; border-left:none; padding:15px 0px; width:200px;}
+#tab-area .tab-title {border-left:1px solid #ccc; border-radius:5px 5px 0 0; border-bottom:1px solid #fff;}
+#tab-area .tab-head li a, #tab-area .tab-title a {text-decoration: none !important; color:#000; text-align:center; display:block; font-size:16px;}
+#tab-area .tab-head ul li.current {border-bottom:1px solid #fff;}
+#tab-area .tab-head ul li.current a {color:#00529B;}
+#tab-area .tab-body ul {width:100%;	overflow: hidden; margin-bottom:0;}
+#tab-area .tab-body ul li {	display:inline;	width:22%; float:left; padding:10px;}
+#tab-area .tab-body .moreInfo {clear:both;	display:inline-block; font-weight: bold; padding:10px;}
+
+
+/*** ORIGINAL HACK FOR ADVANCED SEARCH RADIO BUTTON STYLE - THIS WILL NEED LOOKING AT ***/
+
+.check span{line-height:16px;}
+.check input[type="radio"]{	position: absolute;	-moz-opacity: 0; 	-o-opacity: 0;	-webkit-opacity: 0;	opacity: 0;}
+/* prevent the entire page from scrolling if there is overflow and checkbox or radio button are clicked */
+.check label{	position: relative; }
+/* fallback for IE6, IE7 and IE8 */
+.check input[type="radio"]{	position: static\9;}
+.check input[type="radio"] + span::before{	content: "";	display: inline-block;	width: 22px;	height: 17px;	vertical-align: middle; background-repeat:  no-repeat;}
+.check input[type="radio"]:checked + span::before{	background-position: 0 -18px;}
+/* disabled form elements */
+.check input[type="radio"]:disabled + span,.check input[type="radio"]:disabled + span::before{	-moz-opacity: .4;	-webkit-opacity: .4;	opacity: .4; -o-opacity: .4;}
+
+/* skin-specific sprite */
+.check input[type="radio"] + span::before{	background-image: url("/img/homepage-2011/radio_bg.gif");}
+
+/* only Safari */
+
+/*\*/html*.check input[type="radio"]{opacity:1;}/*end*/
+/*\*/html*.check input[type="radio"] + span::before{background:none;}/*end*/
+
+/* only Safari */
+
+
+/*** REMAINING CONTENT ***/
+
+.uploadcontainer {float:left; padding-bottom:20px;}
+.uploadcontainer .uploadcv {width:544px; background-color:#ececec; padding:11px 13px;  float:left; margin-right:20px; min-height:128px; _height:128px;}
+.uploadcontainer .uploadcv ol {padding:15px 20px 15px 0; float:left; margin:0px;}
+.uploadcontainer .uploadcv ol li {list-style-position:inside; line-height:20px;}
+.uploadcontainer .uploadcv .details {position:relative; padding:15px 0 8px 0; float:left; width:264px;}
+.uploadcontainer .uploadcv .details label {display:none;}
+.uploadcontainer .uploadcv .details label.pre {position:absolute; left:10px; top:27px; display:block;}
+
+.uploadcontainer .uploadcv .details input[type="text"] {padding:10px 5px 10px 5px; font-size:14px; width:160px; border-radius:3px 0 0 3px; -moz-border-radius:3px 0 0 3px; -webkit-border-radius:3px 0 0 3px; -o-border-radius:3px 0 0 3px; border:none; box-shadow:0px 1px 2px #333333 inset; -moz-box-shadow:0px 1px 2px #333333 inset; -webkit-box-shadow:0px 1px 2px #333333 inset; -o-box-shadow:0px 1px 2px #333333 inset; float:left;}
+.uploadcontainer .uploadcv .details input[type="submit"] {background:url("/img/button_blue.png") #00529b; color:#ffffff; font-size:12px; font-weight:bold; padding:9px 15px; border-radius:0 15px 15px 0; -moz-border-radius:0 20px 20px 0; -webkit-border-radius:0 20px 20px 0; -o-border-radius:0 20px 20px 0; *width:90px;  box-shadow:2px 2px 1px #2b6fac inset, -2px -2px 1px #004684 inset; float:left;}
+.uploadcontainer .uploadcv a {color:#05559c; font-weight:bold; float:left; clear:both;}
+.uploadcontainer .uploadcv p {margin:0px;}
+
+.jobweek {position:relative; width:192px; background-color:#ffffff; padding:11px 13px; border:1px solid #cccccc; float:left; min-height:126px; _height:126px;}
+.jobweek h2 {margin-bottom:10px;}
+.jobweek a {color:#05559c; line-height:16px;}
+.jobweek p {padding-top:2px; margin-bottom:0;}
+.jobweek p.locations {height:16px; overflow:hidden;}
+.jobweek img {position:absolute; top:15px; right:15px;}
+
+.mpucontainer {float:left; min-width:815px; padding-bottom:20px;}
+.mpucontainer .mpubanner {float:left; width:300px; height:250px; margin-right:20px;}
+.mpucontainer .careeradvice {float:left; width:222px; background-color:#ffffff; padding:11px 13px; border:1px solid #cccccc;  margin-right:20px;  min-height:226px; _height:226px;}
+.mpucontainer .careeradvice p{margin-bottom:11px;}
+.mpucontainer .careeradvice ul {float:left; width:100%;}
+.mpucontainer .careeradvice ul li {padding:5px 0 7px 32px; display:block; float:left; line-height:14px;}
+.mpucontainer .careeradvice ul li a {color:#05559c; font-weight:normal; padding:0px; float:left; width:198px;}
+.mpucontainer .careeradvice ul li.training {background:url("/img/homepage-2011/training_icon.gif") no-repeat 0 70%;}
+.mpucontainer .careeradvice ul li.ittraining {background:url("/img/homepage-2011/profile_icon.gif") no-repeat 0 20%;}
+.mpucontainer .careeradvice ul li.cvcheck {background:url("/img/homepage-2011/cv_icon.gif") no-repeat top left;}
+.mpucontainer .careeradvice ul li.interview {background:url("/img/homepage-2011/interview_icon.gif") no-repeat 0 30%;}
+.mpucontainer .careeradvice ul li.profile {background:url("/img/homepage-2011/profile_icon.gif") no-repeat top left;}
+.mpucontainer .careeradvice ul li.advice {background:url("/img/homepage-2011/advice_icon.gif") no-repeat top left;}
+.mpucontainer .careeradvice a {color:#05559c; font-weight:bold; float:right; padding-top:5px;}
+.mpucontainer .advertise {width:192px; background-color:#ffffff; padding:11px 13px; border:1px solid #cccccc; float:left; min-height:226px; _height:226px;}
+.mpucontainer .advertise ul {float:left; padding:0 0 5px 10px; margin:0px;}
+.mpucontainer .advertise ul li {list-style-type:none; background:url("/img/homepage-2011/advert_icon.gif") no-repeat 0 50%; padding:4px 0 4px 30px;}
+.mpucontainer .advertise ul.recruiter {padding:15px 0 0 0; border-top:1px solid #dddddd; margin-bottom:0;}
+.mpucontainer .advertise ul.recruiter li {background:none; padding:0px; width:95px; float:left;}
+
+#content .mpucontainer .advertise ul.recruiter a {text-decoration:none;}
+#content .mpucontainer .advertise ul.recruiter a:hover {text-decoration:underline;}
+
+.mpucontainer .advertise ul.recruiter li.rec-login a {background: url("/img/homepage-2011/rec_login.gif") no-repeat left center;   display: block;    padding: 3px 0 2px 34px; font-weight:bold; color:#05559c; line-height:13px; font-size: 11px; margin-right:4px;}
+.mpucontainer .advertise ul.recruiter li.rec-service a {background: url("/img/homepage-2011/rec_service.gif") no-repeat left center;   padding: 2px 0 2px 40px; display:block; font-weight:bold; color:#05559c; line-height:13px; font-size: 11px;}
+.mpucontainer .advertise .advert_btn{color:#ffffff; background:#00529b; font-size:14px; margin:8px 0 10px 0; padding:7px 0; width:100%; float:left; text-align:center; border-radius:20px; font-weight: bold; text-decoration:none; -moz-border-radius:20px; -webkit-border-radius:20px; -o-border-radius:20px; text-decoration:none !important;}
+
+#recruitercontainer{float:left; min-width:815px; padding-bottom:20px;}
+#recruitercontainer .blog{float:left; width:272px; background-color:#ffffff; padding:11px 13px; border:1px solid #cccccc; margin:0 20px 20px 0;}
+#recruitercontainer .blog p{margin:0px;}
+#recruitercontainer .blog p strong{font-weight:bold; padding:10px 0 6px 0; float:left; display:block;}
+#recruitercontainer .blog ul{float:left; width:100%; margin-bottom:0;}
+#recruitercontainer .blog ul li{list-style-type:none; padding:6px 0; background:none;}
+#recruitercontainer .blog ul li a{color:#05559c; font-weight:normal;}
+#recruitercontainer .recruiterrank{float:left; width:248px; background-color:#ffffff; padding:11px 0 5px 0 ; border:1px solid #cccccc; min-height:280px; _height:280px; margin-right:20px;}
+#recruitercontainer .recruiterrank h2 {margin-left:13px;}
+#recruitercontainer .recruiterrank p{margin:0 10px 10px 13px;}
+
+#blogcontainer{float:left; width:320px;}
+
+.portsmouch{background:#f7f7f7; padding:10px; border:1px solid #e8e8e8; width:278px; margin-right:20px; float:left;}
+
+#recruitrank-table{	border:0pt none;	float: left;	width:250px;	margin:0pt 0pt 0;	padding:0pt;}
+#recruitrank-table tr td, #recruitrank-table tr th {	border-top:1px solid #dddddd;	padding:5px 0 4px 8px;}
+#recruitrank-table .heading {	color: #333;	font-weight: bold;}
+#recruitrank-table tr#rr_first td, #recruitrank-table tr#rr_first a {color:#05559C; font-weight:bold; font-size:12px;}
+#recruitrank-table tr td a{width:150px;}
+#recruitrank-table tr td, #recruitrank-table tr a{color:#05559C; font-weight:normal; font-size:11px;}
+#recruitrank-table tr td{color:#000000; padding-right:5px;}
+
+#currentlyReruiting{width:202px; background-color:#ffffff; padding:10px 8px; border:1px solid #cccccc; float:left; min-height:275px; _height:275px;}
+#currentlyReruiting h2 {margin-left:5px;}
+#currentlyReruiting ul li{list-style-type:none; display:inline; padding:5px 4px; float:left; background:none;}
+#currentlyReruiting a.more{color: #05559C;    float: right;    font-weight: bold;     padding: 5px 12px 0 0;  }
+
+/* PPC Landing Pages */
+.logoContainer {
+	height:48px;
+	padding-top:12px;
+}
+h2.jobLogoConstruction {
+	background:url("/img/homepage-2011/find_construction_job.gif") no-repeat !important;
+	width:430px !important;
+}
+h2.jobLogoEngineering {
+	background:url("/img/homepage-2011/find_engineering_job.gif") no-repeat !important;
+	width:403px !important;
+}
+h2.jobLogoIT {
+	background:url("/img/homepage-2011/find_it_job.gif") no-repeat !important;
+	width:258px !important;
+}
+h2.jobLogoSales {
+	background:url("/img/homepage-2011/find_sales_job.gif") no-repeat !important;
+	width:311px !important;
+}
+.uploadwrapper {
+	padding-top:35px;
+}
+.uploadwrapper .uploadcontainer .uploadcv { min-height:182px; }
+.uploadadvertise {
+	width:338px;
+	min-height:100px;
+	float:left;
+	background-color:white;
+	border:1px solid #DDDDDD;
+	padding:10px 15px;
+}
+.uploadadvertise p {
+	margin:0px;
+}
+.uploadOL {
+	float:none !important;
+	padding-bottom:0px !important;
+}
+.uploadDetails {
+	float:left;
+	padding:15px 0 15px;
+	position:relative;
+}
+.uploadDetails label.pre {
+	display: block;
+    left: 10px;
+    position: absolute;
+    top: 27px;
+}
+.uploadDetails input[type="text"] {
+	border: medium none;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 1px 2px #333333 inset;
+    float: left;
+    font-size: 14px;
+    padding: 10px 5px;
+    width: 360px;
+}
+.uploadDetails input[type="submit"] {
+	background-color: #00529B;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 2px 2px 1px #2B6FAC inset, -2px -2px 1px #004684 inset;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 9px 15px;
+}
+.advertiseUL {
+	list-style:none;
+	margin:10px 0;
+}
+.advertiseCards {
+	padding-bottom:10px;
+}
+.advertiseUL li {
+	background:url("/img/tick_black.png");
+	background-repeat:no-repeat;
+	padding-left:35px;
+	line-height:20px;
+}
+.advertiseCards img {
+	padding-right:15px;
+	float:left;
+}
+.advertiseCards a.advertiseNow {
+	float:left;
+	background-color:#00529b;
+	color:white;
+	border-radius:15px;
+	padding:0 20px;
+	line-height:32px;
+}
+
+.typeField{padding:0px !important;}
+.typeField label{padding:10px 0;}
+.loaderImg{padding:10px 0;}
+#recruitercontainer .recruiterrank .button-more{color: #05559C; padding:0px; font-weight:bold;}
+body#paid-search #tab-area{width:960px;}
+body#paid-search #logo{margin-bottom:7px;}
+
+body#paid-search .rec_tab{position:relative; width:960px; margin:0 auto;}
+body#paid-search .rec_tab a {
+  background: url("../img/homepage-2011/rec_left.gif") no-repeat left top;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+}
+
+body#paid-search .rec_tab a span {
+  background: url("../img/homepage-2011/rec_right.gif") no-repeat right top;
+  color: #FFFFFF;
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 10px 25px 12px;
+}
+body#paid-search .bgImage{background:none;}
+body#paid-search #searchBox{width:925px; padding:31px 13px 18px 22px;}	
+body#paid-search #searchBox .searchFields{width:927px; padding-bottom:16px;}
+body#paid-search #searchBox .advancedSearch{width:910px; margin:4px 0 0 5px; _margin:2px 0 0 5px; padding:17px 4px 5px 4px;}
+body#paid-search #searchBox fieldset{width:927px;}
+body#paid-search #searchBox .formField{width:380px; padding:0 13px 0 5px;}
+body#paid-search #searchBox .formField input{width:370px;}
+body#paid-search #searchBox .searchBtn{margin-left:8px; padding:8px 29px 12px 29px; margin-top:33px;}
+body#paid-search .typeField label{padding:0 0 10px 0;}
+body#paid-search .loaderImg{padding:0 0 10px 0;}
+body#paid-search #searchBox .advancedSearch{border-top:1px solid #336a9b;}
+body#paid-search #searchBox h2{margin:0;}
+body#paid-search #searchBox .formField label{padding:13px 0 8px 0;}

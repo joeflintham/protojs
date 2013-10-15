@@ -1,0 +1,359 @@
+/* application container structure */
+/* determines what to show based on the currently selected view */
+
+body {
+
+    .loading {
+	display: none;
+    }
+
+    #searchBox input.searchBtn.loading, input.searchBtn.loading {
+	display: none;
+    }
+
+    #search_filters input.searchBtn {
+	display: none;
+    }
+
+    div#content_header {
+	div#search_info {
+	    p.search_navigator,
+	    p.returnToSearch {
+		display: none;
+	    }
+	    div#pagination {
+		display: none;
+	    }
+	    div#nextprevlinks {
+		display: none;
+		a#skip_to_prev {
+		    display: none;
+		}
+		a#skip_to_next {
+		    display: none;
+		}
+	    }
+	}
+    }
+
+    div#sidebar_content {
+	div#search_filters {
+	    display: none;
+	}
+    	div#vacancy_details_content {
+	    display: none;
+	}
+    	div#saved_search_tools {
+	    display: none;
+	}
+    }
+
+    div#error_panel {
+	display: none;
+    }
+    div#full_vacancy {
+	display: none;
+    }
+    div#advanced_search_form {
+	display: none;
+    }
+    div#search_results {
+	display: none;
+    }
+    div#saved_results {
+	display: none;
+    }
+    div#no_results {
+	display: none;
+    }
+    div#loader {
+	display: none;
+    }
+
+    div.vacancy.unsaved {
+
+	span.save {
+	    display: inline;
+	}
+	span.unsave {
+	    display: none;
+	}
+    }
+    div.vacancy.saved {
+
+	span.save {
+	    display: none;
+	}
+	span.unsave {
+	    display: inline;
+	}
+    }
+
+    &.viewErrors {
+	div#error_panel {
+	    display: block;
+	}
+	&.viewVacancy {
+	    div#sidebar_content {
+    		div#vacancy_details_content {
+		    display: none;
+		}
+	    }
+	}
+    }
+    
+    &.noResults {
+	div#content_header {
+	    display: none;
+	}
+	div#no_results {
+	    display: block;
+	}	    
+    }
+
+    &.viewResults {
+	div#content_header {
+	    div#search_info {
+		p.search_navigator {
+		    display: block;
+		}
+		div#pagination {
+		    display: block;
+		}
+	    }
+	}
+	div#sidebar_content {
+	    div#search_filters {
+		display: block;
+	    }
+    	    div#saved_search_tools {
+		display: block;
+
+		p.viewSavedSearches {
+		    display: none;
+		}
+		p.viewSavedSearches.hasSavedSearches {
+		    display: block;
+		}
+	    }
+
+	    div#vacancy_details_content {
+
+		&.saved div.vacancy_details {
+		    p.save {
+			display: none;
+		    }
+		    p.unsave {
+			display: block;
+		    }
+		}
+		&.unsaved div.vacancy_details {
+		    p.unsave {
+			display: none;
+		    }
+		    p.save {
+			display: block;
+		    }
+		}
+	    }
+	    div#search_filters {
+		
+		input.searchBtn {
+		    display: none;
+		}
+		div.changed input.searchBtn {
+		    display: block;
+		}
+	    }
+	}
+
+	div#search_results {
+	    display: block;
+	}
+
+	&.loading {
+	    div#sidebar_content {
+		div#search_filters div.filter_container {
+		    display: none;
+		}
+		div.loading {
+		    display: block;
+		}
+	    }
+	    div#content_header {
+		div#search_info {
+		    p.search_navigator {
+			display: none;
+		    }
+		    div#pagination {
+			display: none;
+		    }
+		}
+		div.loading {
+		    display: block;
+		}
+	    }
+	}
+    }
+
+    &.formView {
+	div.searchContainer {
+	    height: 186px;
+	    div.searchFields {
+		display: none;
+	    }
+	}
+	div#content_header {
+	    display: none;
+	}
+	div#sidebar_content {
+    	    div#saved_search_tools {
+		display: block;
+	    }
+	}
+	div#advanced_search_form {
+	    display: block;
+	}
+    }
+
+    &.viewSaved {
+	div#content_header {
+	    display: block;
+	    div#search_info {
+		p.search_navigator {
+		    display: none;
+		}
+		div#pagination {
+		    display: none;
+		}
+		div#nextprevlinks {
+		    display: none;
+		}
+		p.returnToSearch {
+		    display: block;
+		}
+	    }
+	}
+	div#sidebar_content {
+    	    div#saved_search_tools {
+		display: block;
+		p.viewSavedSearches {
+		    display: none;
+		}
+	    }
+	}
+	div#saved_results {
+	    display: block;
+	}
+    }
+
+    &.viewVacancy {
+	div#content_header {
+	    div#search_info {
+		p.returnToSearch {
+		    display: block;
+		}
+		&.skipLinks {
+		    div#nextprevlinks {
+			display: block;
+		    }
+		}
+		&.hasPrev {
+		    div#nextprevlinks a#skip_to_prev {
+			display: block;
+		    }
+		}
+		&.hasNext {
+		    div#nextprevlinks a#skip_to_next {
+			display: block;
+		    }
+		}
+	    }
+	}
+	
+	div#sidebar_content {
+    	    div#vacancy_details_content {
+		display: block;
+
+		&.saved div.vacancy_details {
+		    p.save {
+			display: none;
+		    }
+		    p.unsave {
+			display: block;
+		    }
+		}
+		&.unsaved div.vacancy_details {
+		    p.unsave {
+			display: none;
+		    }
+		    p.save {
+			display: block;
+		    }
+		}
+		
+	    }
+    	    div#saved_search_tools {
+		display: block;
+	    }
+	}
+
+	div#full_vacancy {
+	    display: block;
+	}
+
+	&.loading {
+	    div#sidebar_content {
+    		div#vacancy_details_content {
+		    display: none;
+		}
+	    }
+
+	    div#content_header {
+		div.loading {
+		    display: block;
+		}
+	    }
+	}
+    }
+    
+    &.loading {
+	#searchBox input.searchBtn {
+	    display: none;
+	}
+	#searchBox input.searchBtn.loading {
+	    display: block;
+	}
+
+	div#error_panel {
+	    display: none;
+	}
+	div#full_vacancy {
+	    display: none;
+	}
+	div#search_results {
+	    display: none;
+	}
+	div#saved_results {
+	    display: none;
+	}
+	div#no_results {
+	    display: none;
+	}
+	div#loader {
+	    display: block;
+	}
+    }
+}
+
+@media screen and (max-width:800px){
+    
+    body.proto div#sidebar_content {
+	float: none;
+	width: auto;
+    }
+
+    body.proto div#main_content {
+	margin-left: auto;
+    }
+}

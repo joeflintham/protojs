@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Open Web Analytics - Web Pages</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- HEAD Elements -->
+<LINK REL=StyleSheet HREF="/css/owa/owa.css?version=SVN-TRUNK" TYPE="text/css">
+<LINK REL=StyleSheet HREF="/owa/modules/base/css/owa.reporting-css-combined.css?version=SVN-TRUNK" TYPE="text/css">
+
+<script type="text/javascript" src="/owa/modules/base/js/owa.reporting-combined-min.js?version=SVN-TRUNK"></script>
+
+<script>
+
+// OWA CONFIG SETTINGS
+
+OWA.config.main_url = "http://uk.this.local:3000/reporting.html";
+OWA.config.public_url = "http://uk.this.local:3000/";
+OWA.config.baseUrl = "http://uk.this.local:3000/";
+//OWA.config.js_url = "http://uk.this.local:3000/js/owa/";
+OWA.config.action_url = "http://uk.this.local:3000/owa/action.php";
+OWA.config.images_url = "http://uk.this.local:3000/img/";
+OWA.config.log_url = "http://uk.this.local:3000/owa/log.php";
+OWA.config.modules_url = "http://uk.this.local:3000/owa/modules/";
+OWA.config.api_endpoint = "http://uk.this.local:3000/v1/report";
+OWA.config.ns = "owa_";
+OWA.config.link_template = "%s?%s";
+</script>
+
+
+<!-- END HEAD -->	</head>
+	
+	<body class="">
+		<style>
+			html {background-color: #F2F2F2;}
+		</style>
+		
+		<div class="owa">
+		<div id="owa_header">
+
+	<span class="owa_logo"><img src="/img/logo.png" alt="Jobsite Analytics"></span>
+	 &nbsp
+	<span class="owa_navigation">
+		<UL>
+			<LI><a href="/reporting.html">Reporting</a></LI>
+			<LI><a href="/recruiter/index.html">Administration</a></LI>
+		</UL>
+	</span>
+		<span class="user-greating" style="">
+		Hi,  ! &bull;
+					
+								<a class="login" href="/owa/index.php?owa_do=base.loginForm">Login</a>
+							
+				
+	</span>
+	<div class="post-nav"></div>
+					
+		
+</div>		
+		
+			
+		<script>
+OWA.items['base-reportPages'] = new OWA.report();
+OWA.items['base-reportPages'].dom_id = "base-reportPages";
+OWA.items['base-reportPages'].page_num = "1";
+OWA.items['base-reportPages'].max_page_num = "";
+OWA.items['base-reportPages'].max_page_num = "";
+OWA.items['base-reportPages'].properties = {siteId: "c9b7d12e322c7c360fb8f7c72ffe4c41", period: "last_seven_days", startDate: "20130925", endDate: "20131002", action: "base.reportPages"};
+
+// Bind event handlers
+jQuery(document).ready(function(){   
+	
+	// report side navigaion panels - toggle
+	jQuery('.owa_admin_nav_topmenu_toggle').click(function () { 
+      jQuery(this).parent().siblings('.owa_admin_nav_subgroup').toggle(); 
+    });
+});
+</script>
+
+<div id="base-reportPages" class="owa_reportContainer">
+
+	<table width="100%" cellpadding="0" cellspacing="0">
+		
+		<TR>
+						<TD valign="top" class="owa_reportLeftNavColumn">
+				<div class="reportSectionContainer">
+					<div id="owa_reportNavPanel">
+						<div class="owa_admin_nav">
+	
+	<UL>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Dashboard" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportDashboard">Dashboard</a>
+					</div>
+					
+				</div>
+				
+			
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Ecommerce" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportEcommerce">Ecommerce</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Ecommerce" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportRevenue">Revenue</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportTransactions">Transactions</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportVisitsToPurchase">Visits To Purchase</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportDaysToPurchase">Days To Purchase</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Content" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportContent">Content</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Content" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportPages">Top Pages</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportPageTypes">Page Types</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportFeeds">Feeds</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportEntryPages">Entry Pages</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportExitPages">Exit Pages</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportDomstreams">Domstreams</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Action Tracking" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportActionTracking">Action Tracking</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Action Tracking" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportActionGroups">Action Groups</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Visitors" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportVisitors">Visitors</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Visitors" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportGeolocation">Geo-location</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportHosts">Domains</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportVisitorsLoyalty">Visitor Loyalty</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportVisitorsRecency">Visitor Recency</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportVisitorsAge">Visitor Age</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportBrowsers">Browser Types</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportOs">Operating Systems</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Traffic" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportTraffic">Traffic</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Traffic" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportKeywords">Search Terms</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportAnchortext">Inbound Link Text</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportSearchEngines">Search Engines</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportReferringSites">Referring Web Sites</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportCampaigns">Campaigns</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportAds">Ad Performance</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportAdTypes">Ad Types</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportCreativePerformance">Creative Performance</a>
+							</div>
+							
+						</LI>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportAttributionHistory">Attribution History</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+						<LI>
+			<div class="owa_admin_nav_topmenu">
+				
+				<div class="owa_admin_nav_topmenu_item">
+					<div class="owa_admin_nav_topmenu_toggle"></div>
+					<div style="padding:5px;">
+						<a id="owa_admin_nav_topmenu_item_Goals" href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportGoals">Goals</a>
+					</div>
+					
+				</div>
+				
+			
+								<div id="owa_admin_nav_subgroup_Goals" class="owa_admin_nav_subgroup">
+					<UL>
+																		<LI>
+							<div class="owa_admin_nav_subgroup_item">
+								<a href="/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportGoalFunnel">Funnel Visualization</a>
+							</div>
+							
+						</LI>
+											</UL>
+				</div>
+							</div>
+		</LI>
+			</UL>
+
+</div>
+
+					</div>
+				</div>			
+			</TD>
+						<TD valign="top" width="*">
+				
+								<div class="reportSectionContainer reportSiteFilter" style="margin-bottom:20px;">
+				<div id="owa_reportSiteFilter" style="line-height:30px;">
+	
+	<div style="float:left;">
+		<span>Web Site:</span>
+		<SELECT name="owa_reportSiteFilterSelect" id="owa_reportSiteFilterSelect" style="width:auto;height:auto;">
+					<OPTION VALUE="c9b7d12e322c7c360fb8f7c72ffe4c41" selected="selected" selected >demo.openwebanalytics.com</OPTION>
+				</SELECT>
+	</div>
+	&nbsp
+	<span class="genericHorizontalList" style="font-size:12px;float:left;vertical-align:middle;">
+	<ul>
+			</ul>
+	</span>
+	<div style="clear:both;"></div>
+</div>				</div>
+								<div class="reportSectionContainer">
+					<div id="owa_timePeriodControl" class="owa_reportPeriod" style="float:right;"></div>
+					<div id="liveViewSwitch" style="width:auto;float:right; padding-right:30px;"></div>	
+					<div class="owa_reportTitle">Web Pages<span class="titleSuffix"></span></div>
+					
+					<div class="clear"></div>
+					
+<div class="owa_reportSectionContent">
+	
+	<div id="trend-chart"></div>
+	<div id="trend-title" class="owa_reportHeadline"></div>	
+	<div id="trend-metrics" style="height:auto;width:auto;"></div>
+	
+		
+		
+	<div style="clear:both;"></div>
+	<script>
+		
+		var trendurl = '/v1/report/3456/home?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=getResultSet&owa_metrics=pageViews,visits,uniquePageViews&owa_dimensions=date&owa_sort=date&owa_format=json';
+																	  
+		var trend = new OWA.resultSetExplorer('trend-chart');
+		trend.options.sparkline.metric = 'visits';
+		
+		
+				trend.asyncQueue.push(['renderTemplate', 'There were <*= this.d.resultSet.aggregates.pageViews.formatted_value *> page views for <*= this.d.resultSet.aggregates.uniquePageViews.value *> unique pages.', {d: trend}, 'replace', 'trend-title']);
+						trend.asyncQueue.push(['makeAreaChart', [{x: 'date', y: 'pageViews'}], 'trend-chart']);
+				trend.options.metricBoxes.width = '150px';
+		trend.asyncQueue.push(['makeMetricBoxes' , 'trend-metrics']);
+		
+		trend.load(trendurl);
+		
+	</script>
+
+</div>
+
+<div class="owa_reportSectionContent">
+	
+	<div id="dimension-grid"></div>
+	
+	<script>
+		var dimurl = '/v1/report/3456/trend?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=getResultSet&owa_metrics=pageViews,visits,uniquePageViews&owa_dimensions=pagePath,pageTitle,pageType,pageUrl&owa_sort=pageViews-&owa_resultsPerPage=30&owa_format=json';
+																	  
+		var dim = new OWA.resultSetExplorer('dimension-grid');
+		
+				var link = '/owa/index.php?owa_siteId=c9b7d12e322c7c360fb8f7c72ffe4c41&owa_period=last_seven_days&owa_startDate=20130925&owa_endDate=20131002&owa_do=base.reportDocument&owa_pageUrl=%s';
+		var values = ['pageUrl'];
+		dim.addLinkToColumn('pagePath', link, values);
+						dim.options.grid.excludeColumns = ['pageUrl'];
+				dim.asyncQueue.push(['refreshGrid']);
+		dim.load(dimurl);
+	</script>
+
+</div>
+
+<script type="text/x-jqote-template" id="metricInfobox">
+ <![CDATA[
+ 
+	<div id = "<*= this.dom_id *>" class="owa_metricInfobox" style="min-width:135px;width:<*= this.width || 'auto' *>;">
+	<p class="owa_metricInfoboxLabel"><*= this.label *></p>
+	<p class="owa_metricInfoboxLargeNumber"><*= this.formatted_value *></p>
+	</div>
+
+]]>
+</script>
+
+<script type="text/x-jqote-template" id="table-column">
+<![CDATA[
+
+<TD class="<*= this.result_type *>cell"><*= this.value *></TD>
+		
+]]> 
+</script>
+
+<script type="text/x-jqote-template" id="table-row">
+<![CDATA[
+<TR>
+<*= this.columns*>
+</TR>		
+]]> 
+</script>
+
+<script type="text/x-jqote-template" id="simpleTable-outer">
+<![CDATA[
+
+<table id="<*= this.dom_id *>" class="simpleTable">
+	<tr>
+		<*= this.headers *>
+	</tr>
+</table>
+]]>
+</script>
+
+<script type="text/x-jqote-template" id="simpleTable-headers">
+<![CDATA[
+<th class="<*= this.result_type *>"><*= this.label *></th>
+]]>
+</script>
+
+<script type="text/x-jqote-template" id="attributionCell">
+<![CDATA[
+<b>Atribution <*=(j+1) *>:</b><BR>
+<* if (this.md) { *> <i>Medium:</i> <*= this.md *> -> <* } *>
+<* if (this.sr) { *> <i>Source:</i> <*= this.sr *> -> <* } *>
+<* if (this.cn) { *> <i>Campaign:</i> <*= this.cn *> -> <* } *>
+<* if (this.ad) { *> <i>Ad:</i> <*= this.ad *> -> <* } *>
+<* if (this.at) { *> <i>Ad Type:</i> <*= this.at *> -> <* } *>
+<* if (this.st) { *> <i>Search Terms:</i> <*= this.st *><* } *>
+<br>
+]]>
+</script>
+
+				
+				</div>
+			</TD>
+		</TR>
+	</table>	
+</div>
+<script>
+OWA.items['base-reportPages'].displayTimePeriodPicker('#owa_timePeriodControl');
+OWA.items['base-reportPages'].showSiteFilter();
+OWA.items['base-reportPages'].showAutoRefreshControl({label: 'Live View:', target: '#liveViewSwitch'});
+</script>
+		
+		<div class="owa_footer" style="text-align:center">	
+	<span class="inline_h4"><a href="http://www.openwebanalytics.com">Web Analytics</a> powered by <a href="http://www.openwebanalytics.com">Open Web Analytics</a></span>
+</div>		</div>
+	</body>
+	
+</html>

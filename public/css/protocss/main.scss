@@ -1,0 +1,709 @@
+@mixin tab_border ($size, $colour) {
+    border: $size solid $colour;
+    border-radius: $size;
+}
+
+$border_colour: #cccccc;
+
+
+body.nh .webfont {
+    font-family: FranklinGothicTL-ExtraCn;
+    font-weight: normal;
+    font-style: normal;
+    color: #333;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+body.proto a#logo {
+    margin-top: -78px;
+}
+
+body.proto .uploadcontainer .uploadcv .details input[type="submit"] { font-weight: normal; letter-spacing: 0.01em; }
+
+body.proto ul#firstNav li.jobs {
+    margin-left: 124px;
+}
+
+body.proto #searchBox .advancedSearch h3 a {
+    background-image: url(/img/protoimg/plus_minus_new.png);
+}
+
+body.proto #content {
+    width: auto;
+}
+
+body.proto .uploadcontainer .uploadcv {
+    width: 934px;
+    margin-right: 0px;
+}
+
+body.proto .uploadcontainer .uploadcv ol {
+    padding: 15px 0px 15px 0px;
+}
+
+body.proto #tab-area {
+    width: 960px;
+    top: 10px;
+    position: relative;
+    padding-bottom: 10px; 
+    margin-bottom: 20px;  
+}     
+
+body.proto #tab-area h2.webFont {
+    width: 210px;
+    text-align: center;
+}
+
+body.proto #tab-area .tab-head li {
+    width: 250px;
+}
+
+body.proto div.mpucontainer {
+    width: 960px;
+}
+
+body.proto div.mpucontainer .jobweek, 
+body.proto div.mpucontainer .advertise, 
+body.proto div.mpucontainer #currentlyReruiting {
+    width: 278.5px;
+    padding: 11px 13px;
+    margin-right: 20px;
+    height: 280px;
+}
+
+body.proto div.mpucontainer .jobweek img {
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+body.proto div.mpucontainer #currentlyReruiting {
+    margin-right: 0px;
+}
+
+body.proto div.mpucontainer .jobweek p.additional {
+    margin-top: 10px;
+}
+
+body.proto div.mpucontainer #currentlyReruiting .more_recruiters {
+    padding-top: 20px;
+    clear: both;
+}
+
+body.proto #searchBox h2 {
+    background: url(/img/protoimg/find-a-job-nh_jl.png) no-repeat 0 0;
+}
+
+body.proto .bgFader #diva, .bgFader #divb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+/*
+.bgFader .nofade {
+    -webkit-transition: opacity 0s;
+       -moz-transition: opacity 0s;
+        -ms-transition: opacity 0s;
+         -o-transition: opacity 0s;
+            transition: opacity 0s;
+}
+
+.bgFader .fade {
+    -webkit-transition: opacity 5s;
+       -moz-transition: opacity 5s;
+        -ms-transition: opacity 5s;
+         -o-transition: opacity 5s;
+            transition: opacity 5s;
+}
+*/
+body.proto .bgFader .topShadow {
+    position:relative;
+    z-index: 3;
+}
+
+body.proto #page #header {
+    height: auto;
+}
+
+body.proto #mainNav, 
+body.proto #content {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+body.proto #mainNav .rec_tab a, 
+body.proto #mainNav .rec_tab a span {
+    background-image: none;
+}
+
+body.proto #mainNav .rec_tab a {
+    background: #004384;
+}
+
+body.proto #firstNav #accountMenu a#navLoginLink {
+    margin: 20px 0 22px 15px;
+}
+
+body.proto #firstNav #accountMenu .wrapper {
+    float: right;
+}
+
+body.proto #firstNav #accountMenu .wrapper #navRegisterLink, 
+body.proto #firstNav #accountMenu .wrapper #navMyjobsiteLink,
+body.proto #firstNav #accountMenu .wrapper.isHovered #navRegisterLink,
+body.proto #firstNav #accountMenu .wrapper #navRegisterLink,
+body.proto #firstNav #accountMenu .wrapper .link,
+body.proto #firstNav #accountMenu .wrapper.isHovered .link {
+    background-image: none;    
+}
+
+body.proto ul#firstNav li.jobs {
+    margin-left: 0px;
+}
+
+body.proto ul#firstNav #accountMenu {
+    float: left;
+    border-right: 1px solid #e3e3e3;
+    border: auto;
+    position: relative;
+    width: auto;
+}
+
+body.proto ul#firstNav #accountMenu a#navLoginLink {
+    margin: auto;
+}
+
+#firstNav #navLoginLink, #firstNav #navLogoutLink {
+    float: left;
+    position: relative;
+    padding: 24px 12px 22px 12px;
+    z-index: 2;
+    color: #00529B;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    line-height: 1;
+}
+
+body.proto #firstNav #accountMenu .wrapper .link a#navRegisterLink {
+    padding-right: 13px;
+    background: #004384;
+    text-shadow: none;
+    color: #fff;
+}
+
+body.proto #searchBox .searchBtn {
+    background-image: none;
+    background: #ec7a00;
+
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+
+    text-shadow: none;
+
+    padding: 10px 28px;
+}
+
+body.proto .uploadcontainer .uploadcv .details input[type="submit"] {
+    background-image: none;
+    background: #004384;
+
+    padding: 10px 15px;
+    border: 1px solid #004384;
+}
+
+body.proto .mpucontainer .advertise .advert_btn {
+    background: #004384;
+    
+    padding: 12px 49px;
+    width: auto;
+}
+
+body.proto .mpucontainer .advertise ul.recruiter li {
+    width: 98.5px;
+}
+
+body.proto .uploadcontainer .uploadcv .details {
+    width: auto;
+}
+
+body.proto .uploadcontainer .uploadcv fieldset {
+    padding-left: 50px;
+    float: right;
+    margin-right: 50px;
+    margin-top: -12px;
+}
+
+body.proto .uploadcontainer .uploadcv .details label.pre {
+    top: 29px;
+}
+
+body.proto .uploadcontainer .uploadcv .details input[type="text"] {
+    margin-right: 18px;
+    width: 260px;
+}
+
+body.proto .uploadcontainer .uploadcv .details input[type="text"],
+body.proto .uploadcontainer .uploadcv .details input[type="submit"],
+body.proto .mpucontainer .advertise .advert_btn,
+body.proto #searchBox .formField input,
+body.proto .roundedcorner,
+body.proto #tab-area .tab-head ul li.first,
+body.proto #tab-area .tab-head ul li.last,
+body.proto #tab-area .tab-body {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+body.proto #footer .wrapper.cp {
+    background: #f4f4f4;
+    border-top: 1px solid #D5D5D5;
+    padding: 20px 0px;
+    width: auto;
+}
+
+body.proto .copyright {
+    width: 960px;
+    margin: auto;
+}
+
+body.proto #salaryPicker {
+    padding-left: 5px;
+}
+
+body.proto #advancedSearch select {
+    width: 174px;
+}
+
+body.proto #page {
+    padding-bottom: 20px;
+}
+
+body.proto #footer {
+    padding-bottom: 0px;
+}
+
+
+
+
+
+
+/* tabbed links */
+
+div.tabPanel {
+    @include tab_border(1px, $border_colour);
+
+    margin: 0 auto;
+    width: 100%;    
+    background: white;
+    clear: left;
+    margin-bottom: 18px;
+}
+
+div.searchTabs a.tab-main-title span,
+div.searchTabs a.sectors span,
+div.searchTabs a.locations span,
+div.searchTabs a.jobtitle span {
+    display: block;
+    width: 100%; 
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+div.searchTabs .tab-body {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+div.searchTabs ul {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+div.searchTabs ul li {
+    font-size: 0.8em;
+    display: inline-block;
+    width: 24%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: none;
+}
+
+div.searchTabs ul li a {
+    display: block;
+    padding: 5px;
+}
+
+div.searchTabs a.moreInfo {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.tab-menu {
+    position: relative;
+    z-index: 1;
+}
+
+.tab-controller {
+    display: block;
+    float: left;
+    width: 33.33%;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-controller a {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    @include tab_border(1px, $border_colour);
+    border-left: none;
+    border-top: none;
+}
+
+#content .tab-controller a {
+    text-decoration: none;
+}
+
+.tab-controller:first-child {
+    border-left: none;
+}
+
+.tab-controller:last-child a {
+    border-right: none;
+}
+
+.tab-controller.active a {
+    border-bottom: none;
+}
+
+div.searchTabs a.tab-heading {
+    display: block;
+    height: 42px;    
+}
+
+div.searchTabs .tab-controller a.tab-heading {
+}
+
+.nojs {
+    width: 100%;
+}
+
+.tab-menu .nojs {
+    display: none;
+}
+
+.nojs a {
+    padding: 10px 0;
+}
+
+div.sections .tab-controller {
+    display: none;
+}
+
+div.unflyout {
+    display: none;
+}
+
+@media screen and (max-width:959px){
+
+    body.proto #page #header,
+    body.proto #page .copyright,
+    body.proto #page .wrapper {
+         width: auto;
+	 min-width: 200px;
+    }
+    
+    body.proto #searchBox { 
+         width: auto;
+
+	 p.jobCount {
+	     float: none;
+	     padding-right: 0px;
+	 }
+
+	 fieldset,
+	 .advancedSearch,
+	 .heading,
+	 .searchFields,
+	 .advancedSearch h1 {
+	     width: auto;
+	 }
+    }
+
+    body.proto div.searchContainer, 
+    body.proto div.mpucontainer { 
+         width: auto;
+	 min-width: 280px;
+    }
+
+    body.proto div.mpucontainer .roundedcorner { 
+        float: left;
+	margin-bottom: 18px;
+    }
+
+    body.proto .uploadcontainer .uploadcv {
+        width: auto;
+    } 
+
+    body.proto div.tabPanel, 
+    body.proto div.uploadcontainer, 
+    body.proto div.mpucontainer { 
+       margin: 18px;
+       width: auto;
+    }
+    
+    #footer {
+        min-width: 280px;
+    }
+}
+    body.proto #mobiNavControl {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 20px;
+    }
+
+    body.proto ul#firstNav {
+	display: block;
+	-moz-transition: height 1.5s ease 0s, opacity 1s ease 0.5s;
+	-webkit-transition: height 1.5s ease 0s, opacity 1s ease 0.5s;
+	-o-transition: height 1.5s ease 0s, opacity 1s ease 0.5s;
+	transition: height 1.5s ease 0s, opacity 1s ease 0.5s;
+    }
+
+
+
+@media screen and (max-width:849px){
+    /* tabbed links */
+
+    body.proto #footer .column {
+	background-image: none;
+	padding: 0px 30px;
+    }
+
+
+    div.tab-menu .tab-controller {
+	display: none;
+    }
+
+    div.sections .tab-controller {
+	display: block;
+    }
+
+    div.sections .tab-controller {
+	width: 100%;
+	display: block;
+    }
+
+    div.sections .tab-controller a {
+	border-right: none;
+	border-top: none;
+	border-top: 3px solid black;
+	border-bottom: none;
+    }
+
+    .tab-controller.active a {
+	border-bottom: none;
+	border-top: 3px solid black;
+    }
+
+    div.sections div.single-tab:first-child .tab-controller a {
+	border-top: none;
+    }
+
+    div.sections div.single-tab:last-child .tab-controller a {
+	border-bottom: none;
+    }
+
+    div.searchTabs ul li {
+	display: block;
+	width: 100%;
+    }
+
+    div.searchTabs a.moreInfo {
+	float: left
+    }
+}
+
+
+@media screen and (max-width:750px){
+
+    .formField.break {
+	display: block;
+	clear: left;
+    }
+
+
+    
+}
+
+@media screen and (max-width:800px) and (min-width:401px){
+
+    body.proto ul#firstNav>li,
+    body.proto ul#firstNav li#accountMenu,
+    body.proto ul#firstNav li#recruiterTab {
+	width: 23%;
+	max-height: 60px;
+    }
+
+    body.proto ul#firstNav li.advice:after {
+	content: ' ';
+	display: block;
+	clear: left;
+    }
+
+    body.proto #mainNav #accountMenu .wrapper.isHovered {
+	display: none;
+    }
+
+    body.proto #mainNav #firstNav li:hover a {
+	color: #002969;
+	padding-bottom: 24px;
+	background-image: none;
+    }
+
+    body.proto #mainNav #firstNav li:hover a.menu_anchor {
+	border-bottom: none;
+    }
+
+    body.proto #mainNav #firstNav li:hover .flyout {display: none;}
+    
+}
+
+@media screen and (max-width:640px){
+
+    body.proto .uploadcontainer .uploadcv .details input[type="text"] {
+        width: auto;
+    }
+
+    p.jobCount {
+	display: block;
+	clear: left;
+	padding-left: 9px;
+    }
+
+
+}
+
+@media screen and (max-width:400px){
+
+    body.proto ul#firstNav li,
+    body.proto ul#firstNav li#accountMenu,
+    body.proto ul#firstNav li#recruiterTab {
+	>a{
+	    float:none
+	} 
+	float: none;
+	text-align: center;
+	border-bottom-width: 1px;
+	border: 1px solid #E3E3E3;
+	border-top: none;
+	z-index: 2;
+	padding: 0;
+	background: none;
+    }
+
+    body.proto #mainNav #accountMenu .wrapper.isHovered {
+	display: none;
+    }
+
+    body.proto ul#firstNav li {
+	border: 1px solid #E3E3E3;
+	border-top: none;
+	padding: 0;
+	margin: 0;
+    }
+
+    body.proto ul#firstNav li:hover {
+	border: 1px solid #E3E3E3;
+	border-top: none;
+	padding: 0;
+	margin: 0;
+    }
+
+    body.proto ul#firstNav li a.menu_anchor {
+	padding-bottom: 22px;
+	background-image: none;
+	border: 1px solid #E3E3E3;
+	border-top: none;
+	border-style: none;
+	margin-bottom: 0;
+    }
+
+
+    body.proto ul#firstNav li:hover a.menu_anchor {
+	color: #002969;
+	padding-bottom: 22px;
+	background-image: none;	
+	border-top: none;
+	border-style: none;
+	margin-bottom: 0;
+    }
+
+    body.proto #mainNav #firstNav li:hover .flyout {display: none;}
+
+    body.proto #mobiNavControl {
+	display: block;
+    }
+
+    body.proto ul#firstNav {
+    }
+
+    body.proto div#content {
+	background: #f4f4f4;
+    }
+
+    body.proto div#middleContainer{
+	position: relative;
+	z-index: 51;
+    }
+
+    body.proto div#header {
+	position: relative;
+    }
+
+}

@@ -1,0 +1,31 @@
+
+
+
+  <script type="text/template" id="radio_search_filters_field">
+    <label for="<%=field_id %>" class="<%=disabled %>">
+      <input type="radio" value="<%=value %>" name="<%=field_name %>" id="<%=field_id %>" <%=checked %> <%=disabled %> /> <%=label %> (<%=count %>)
+    </label><br />
+  </script>
+
+  <script type="text/template" id="full_vacancy_listing">
+    <div class="full_vacancy">
+      <h1><%=job_title %></h1>
+      <p><%=vac_dscrpn %></p>
+    </div>
+  </script>
+
+  <script type="text/template" id="vacancy_details">
+    <div class="vacancy_details">
+      <h2>Vacancy Details</h2>
+      <ul>
+	<li>Job type: <span class="meta"><%=jobtype %></span></li>
+	<li>Location: <span class="meta"><%=location %></span></li>
+	<li>Start date: <span class="meta"><%=start_dt %></span></li>
+	<li>Salary: <span class="meta"><%=salary %></span></li>
+	<li>Date advertised: <span class="meta"><%=posted %></span></li>
+	<li>Contact: <span class="meta"><%=email %></span></li>
+      </ul>
+      <p class="save"><a href="<%=savelink %>">Add</a> to your saved vacancies</p>
+      <p class="unsave">You have saved this vacancy (<a href="<%=unsavelink %>">Unsave</a>)</p>
+    </div>
+  </script>

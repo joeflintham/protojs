@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /v1/
+RewriteCond %{QUERY_STRING} ^(([^&]*&)*)page=(.*)(&.*)?$
+RewriteRule ^vacancy$ vacancies%3 [L,R=301]
+RewriteRule ^vacancy$ vacancies [L,R=301]
+RewriteRule ^vacancies1(\??)$ vacancies

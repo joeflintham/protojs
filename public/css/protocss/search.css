@@ -1,0 +1,167 @@
+/* application container structure */
+/* determines what to show based on the currently selected view */
+body .loading {
+  display: none; }
+body #searchBox input.searchBtn.loading, body input.searchBtn.loading {
+  display: none; }
+body #search_filters input.searchBtn {
+  display: none; }
+body div#content_header div#search_info p.search_navigator,
+body div#content_header div#search_info p.returnToSearch {
+  display: none; }
+body div#content_header div#search_info div#pagination {
+  display: none; }
+body div#content_header div#search_info div#nextprevlinks {
+  display: none; }
+  body div#content_header div#search_info div#nextprevlinks a#skip_to_prev {
+    display: none; }
+  body div#content_header div#search_info div#nextprevlinks a#skip_to_next {
+    display: none; }
+body div#sidebar_content div#search_filters {
+  display: none; }
+body div#sidebar_content div#vacancy_details_content {
+  display: none; }
+body div#sidebar_content div#saved_search_tools {
+  display: none; }
+body div#error_panel {
+  display: none; }
+body div#full_vacancy {
+  display: none; }
+body div#advanced_search_form {
+  display: none; }
+body div#search_results {
+  display: none; }
+body div#saved_results {
+  display: none; }
+body div#no_results {
+  display: none; }
+body div#loader {
+  display: none; }
+body div.vacancy.unsaved span.save {
+  display: inline; }
+body div.vacancy.unsaved span.unsave {
+  display: none; }
+body div.vacancy.saved span.save {
+  display: none; }
+body div.vacancy.saved span.unsave {
+  display: inline; }
+body.viewErrors div#error_panel {
+  display: block; }
+body.viewErrors.viewVacancy div#sidebar_content div#vacancy_details_content {
+  display: none; }
+body.noResults div#content_header {
+  display: none; }
+body.noResults div#no_results {
+  display: block; }
+body.viewResults div#content_header div#search_info p.search_navigator {
+  display: block; }
+body.viewResults div#content_header div#search_info div#pagination {
+  display: block; }
+body.viewResults div#sidebar_content div#search_filters {
+  display: block; }
+body.viewResults div#sidebar_content div#saved_search_tools {
+  display: block; }
+  body.viewResults div#sidebar_content div#saved_search_tools p.viewSavedSearches {
+    display: none; }
+  body.viewResults div#sidebar_content div#saved_search_tools p.viewSavedSearches.hasSavedSearches {
+    display: block; }
+body.viewResults div#sidebar_content div#vacancy_details_content.saved div.vacancy_details p.save {
+  display: none; }
+body.viewResults div#sidebar_content div#vacancy_details_content.saved div.vacancy_details p.unsave {
+  display: block; }
+body.viewResults div#sidebar_content div#vacancy_details_content.unsaved div.vacancy_details p.unsave {
+  display: none; }
+body.viewResults div#sidebar_content div#vacancy_details_content.unsaved div.vacancy_details p.save {
+  display: block; }
+body.viewResults div#sidebar_content div#search_filters input.searchBtn {
+  display: none; }
+body.viewResults div#sidebar_content div#search_filters div.changed input.searchBtn {
+  display: block; }
+body.viewResults div#search_results {
+  display: block; }
+body.viewResults.loading div#sidebar_content div#search_filters div.filter_container {
+  display: none; }
+body.viewResults.loading div#sidebar_content div.loading {
+  display: block; }
+body.viewResults.loading div#content_header div#search_info p.search_navigator {
+  display: none; }
+body.viewResults.loading div#content_header div#search_info div#pagination {
+  display: none; }
+body.viewResults.loading div#content_header div.loading {
+  display: block; }
+body.formView div.searchContainer {
+  height: 186px; }
+  body.formView div.searchContainer div.searchFields {
+    display: none; }
+body.formView div#content_header {
+  display: none; }
+body.formView div#sidebar_content div#saved_search_tools {
+  display: block; }
+body.formView div#advanced_search_form {
+  display: block; }
+body.viewSaved div#content_header {
+  display: block; }
+  body.viewSaved div#content_header div#search_info p.search_navigator {
+    display: none; }
+  body.viewSaved div#content_header div#search_info div#pagination {
+    display: none; }
+  body.viewSaved div#content_header div#search_info div#nextprevlinks {
+    display: none; }
+  body.viewSaved div#content_header div#search_info p.returnToSearch {
+    display: block; }
+body.viewSaved div#sidebar_content div#saved_search_tools {
+  display: block; }
+  body.viewSaved div#sidebar_content div#saved_search_tools p.viewSavedSearches {
+    display: none; }
+body.viewSaved div#saved_results {
+  display: block; }
+body.viewVacancy div#content_header div#search_info p.returnToSearch {
+  display: block; }
+body.viewVacancy div#content_header div#search_info.skipLinks div#nextprevlinks {
+  display: block; }
+body.viewVacancy div#content_header div#search_info.hasPrev div#nextprevlinks a#skip_to_prev {
+  display: block; }
+body.viewVacancy div#content_header div#search_info.hasNext div#nextprevlinks a#skip_to_next {
+  display: block; }
+body.viewVacancy div#sidebar_content div#vacancy_details_content {
+  display: block; }
+  body.viewVacancy div#sidebar_content div#vacancy_details_content.saved div.vacancy_details p.save {
+    display: none; }
+  body.viewVacancy div#sidebar_content div#vacancy_details_content.saved div.vacancy_details p.unsave {
+    display: block; }
+  body.viewVacancy div#sidebar_content div#vacancy_details_content.unsaved div.vacancy_details p.unsave {
+    display: none; }
+  body.viewVacancy div#sidebar_content div#vacancy_details_content.unsaved div.vacancy_details p.save {
+    display: block; }
+body.viewVacancy div#sidebar_content div#saved_search_tools {
+  display: block; }
+body.viewVacancy div#full_vacancy {
+  display: block; }
+body.viewVacancy.loading div#sidebar_content div#vacancy_details_content {
+  display: none; }
+body.viewVacancy.loading div#content_header div.loading {
+  display: block; }
+body.loading #searchBox input.searchBtn {
+  display: none; }
+body.loading #searchBox input.searchBtn.loading {
+  display: block; }
+body.loading div#error_panel {
+  display: none; }
+body.loading div#full_vacancy {
+  display: none; }
+body.loading div#search_results {
+  display: none; }
+body.loading div#saved_results {
+  display: none; }
+body.loading div#no_results {
+  display: none; }
+body.loading div#loader {
+  display: block; }
+
+@media screen and (max-width: 800px) {
+  body.proto div#sidebar_content {
+    float: none;
+    width: auto; }
+
+  body.proto div#main_content {
+    margin-left: auto; } }

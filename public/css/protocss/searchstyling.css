@@ -1,0 +1,87 @@
+/* search application container styles */
+/* font styles, sizes, colors, backgrounds, borders, list-style-types */
+div.vacancy,
+div#content_header,
+div.side_panel,
+div#advanced_search_form {
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.5); }
+
+div#search_info_content span.pSpan {
+  border: 1px solid #cccccc;
+  background: #ec7a00;
+  color: #fff; }
+  div#search_info_content span.pSpan a {
+    color: #fff; }
+  div#search_info_content span.pSpan.active {
+    background: #D4B99B;
+    color: #000; }
+  div#search_info_content span.pSpan.ellipse {
+    padding: 5px;
+    background: transparent;
+    color: #000; }
+
+div#sidebar_content div#vacancy_details_content h3,
+div#sidebar_content div#search_filters h3,
+div#sidebar_content div#saved_search_tools h3 {
+  font-size: 1.5em;
+  font-weight: bold; }
+div#sidebar_content div#vacancy_details_content h4,
+div#sidebar_content div#search_filters h4,
+div#sidebar_content div#saved_search_tools h4 {
+  font-size: 1.2em;
+  font-weight: bold; }
+div#sidebar_content div#vacancy_details_content label.disabled,
+div#sidebar_content div#search_filters label.disabled,
+div#sidebar_content div#saved_search_tools label.disabled {
+  color: #cccccc; }
+div#sidebar_content .vacancy_details ul li {
+  list-style-type: none;
+  background: none; }
+div#sidebar_content .vacancy_details span.meta {
+  font-weight: bold; }
+div#sidebar_content div#search_filters span.salary_amount {
+  color: #f6931f;
+  font-weight: bold; }
+
+div#full_vacancy .full_vacancy h1 {
+  font-size: 1.8em; }
+div#full_vacancy .full_vacancy {
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.5); }
+
+div#saved_results .vacancy h3,
+div#search_results .vacancy h3 {
+  font-size: 1.5em; }
+div#saved_results .vacancy span.meta span.label,
+div#search_results .vacancy span.meta span.label {
+  font-style: italic; }
+div#saved_results .vacancy span.meta span.value,
+div#search_results .vacancy span.meta span.value {
+  font-weight: bold; }
+
+div#advanced_search_form h1 {
+  border-bottom: none; }
+div#advanced_search_form form#advanced_search div.formField label.main_label {
+  font-weight: bold;
+  font-size: 1.3em; }
+div#advanced_search_form form#advanced_search div.formField span.salary_amount {
+  color: #f6931f;
+  font-weight: bold; }
+div#advanced_search_form form#advanced_search div.formField p {
+  font-style: italic; }
+
+input.searchBtn {
+  background-image: none;
+  background: #ec7a00;
+  font-weight: normal;
+  font-size: 18px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 1s; }
+  input.searchBtn:hover {
+    background-color: #e9aa66; }
+
+#search_filters input.searchBtn {
+  font-size: 14px; }

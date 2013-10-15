@@ -1,0 +1,102 @@
+/* search application container layout */
+/* widths, heights, display types, margins, padding, floats, positions */
+body.formView div.searchContainer {
+  height: 186px; }
+
+body.loading div#loader div#loader_content {
+  width: 272px;
+  margin: 0 auto; }
+
+div.vacancy,
+div#content_header,
+div.side_panel,
+div#advanced_search_form {
+  padding: 10px;
+  margin: 0px 0px 20px; }
+
+div#main_content {
+  margin-left: 280px; }
+
+div#search_info_content span.pSpan {
+  display: inline-block;
+  margin: 5px 2px; }
+  div#search_info_content span.pSpan a {
+    padding: 5px;
+    display: block; }
+  div#search_info_content span.pSpan.active {
+    padding: 5px; }
+
+div#sidebar_content {
+  float: left;
+  clear: left;
+  z-index: 1;
+  width: 260px;
+  margin: 0 0px 20px 0; }
+  div#sidebar_content .vacancy_details h2 {
+    margin: 10px; }
+  div#sidebar_content div#search_filters fieldset {
+    margin-bottom: 15px; }
+  div#sidebar_content div#search_filters span.salary_amount {
+    display: block;
+    margin: 5px 0px 10px; }
+  div#sidebar_content div#search_filters div#salary_range {
+    margin: 0px 10px; }
+
+div#full_vacancy .full_vacancy h1 {
+  float: none; }
+div#full_vacancy .full_vacancy {
+  padding: 10px;
+  margin-bottom: 10px; }
+
+div#saved_results .vacancy span.meta,
+div#search_results .vacancy span.meta {
+  display: inline-block;
+  margin-right: 10px; }
+
+div#advanced_search_form h1 {
+  margin: 10px;
+  float: none; }
+div#advanced_search_form form#advanced_search div.formField {
+  margin: 10px 10px 30px; }
+  div#advanced_search_form form#advanced_search div.formField input[type=text], div#advanced_search_form form#advanced_search div.formField span.daysback_block {
+    width: 90%;
+    display: block;
+    margin: 5px auto; }
+  div#advanced_search_form form#advanced_search div.formField span.daysback_block label {
+    width: 20%;
+    display: inline-block; }
+  div#advanced_search_form form#advanced_search div.formField input[type=radio] {
+    margin-top: -1px; }
+  div#advanced_search_form form#advanced_search div.formField label.job_type {
+    margin: 4px 3px;
+    display: inline-block; }
+  div#advanced_search_form form#advanced_search div.formField span.salary_amount {
+    display: block;
+    margin: 5px auto 10px;
+    width: 90%; }
+  div#advanced_search_form form#advanced_search div.formField div.salary_range {
+    width: 90%;
+    margin: auto; }
+  div#advanced_search_form form#advanced_search div.formField p {
+    width: 90%;
+    display: block;
+    margin: 10px auto 0px; }
+div#advanced_search_form form#advanced_search input[type=submit] {
+  margin: 20px; }
+
+div#footer {
+  position: relative;
+  z-index: 2; }
+
+input.searchBtn {
+  padding: 9px 28px 12px 28px;
+  margin-top: 26px;
+  margin-left: 10px;
+  cursor: pointer; }
+
+#searchBox input.searchBtn.loading, input.searchBtn.loading {
+  padding: 10px 16px 10px 16px; }
+
+#search_filters input.searchBtn {
+  padding: 8px;
+  margin-bottom: 15px; }

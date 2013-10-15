@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Demo Search Results driven by AJAX</title>
+<link rel="stylesheet" type="text/css" href="/css/demo.css" />
+<script type="text/javascript" src="/js/handlebars.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/x-handlebars-template" id="search-result-template">
+{{#.}}
+<div class="lineage clearfix">
+       <div class="clearfix">
+           <h3><a href="/v1/vacancy/{{vac_ref}}/{{job_title}}">{{job_title}}</a></h3>
+       <dl class="vacancyDetails clearfix">
+            <dt>Salary:</dt>        <dd class="salary">{{salary}}</dd>
+            <dt>Location:</dt>      <dd class="location">{{location}}</dd>
+            <dt>Job Type:</dt>      <dd class="duration">{{duration}}</dd>
+            <dt>Date Posted:</dt>   <dd class="posted">{{create_date}}
+                                        <a  rel="nofollow" 
+                                            method="PUT"
+                                            onclick="basket_window=window.open('','gjs_basket','scrollbars=1,resizable=1,toolbar=1,status=1,width=800,height=550'); basket_window.focus();" 
+                                            href="/v1/basket/{{agency_id}}" 
+                                            target="gjs_basket" class="button"
+                                        >Add to My Shortlist</a></dd>
+        </dl>   
+        <p class="jobDesc">{{job_dscrpn}}</jobDesc>
+        </div>
+</div>
+{{/.}}
+</script>
+
+</head>
+
+<body>
+
+<div id="rounded">
+<img src="img/top_bg.gif" alt="top" /><div id="main" class="container">
+    <h1>Demo Search Results driven by AJAX</h1>
+    <h2>Could it be this simple?</h2>
+    
+    <ul id="navigation">
+    <li><a href="#page1">Page 1</a></li>
+    <li><a href="#page2">Page 2</a></li>
+    <li><a href="#page3">Page 3</a></li>
+    <li><a href="#page4">Page 4</a></li>
+    <li><img id="loading" src="img/ajax_load.gif" alt="loading" /></li>
+    </ul>
+    
+    <div class="clear"></div>
+   
+    <div id="pageContent">
+
+   If no params passed show the advanced search form here!!!
+    
+    </div>
+    <div class="clear"></div>
+<img src="img/bottom_bg.gif" alt="bottom" /></div>
+
+<div align="center" class="demo">
+Back to <a href="/index.html">Evenbase AJAX</a> demo Homepage</div>
+
+</body>
+</html>

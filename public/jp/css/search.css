@@ -1,0 +1,107 @@
+body#homepage #content div#mainContent,
+body#homepage #content div#mainContent div#search,
+body#homepage #content div#mainContent #search div#search_inner, 
+body#homepage #content div#mainContent #search div#search_inner div#search_bottom, 
+body#homepage #content div#mainContent { 
+    width: auto; 
+    border-radius: 6px;
+}
+
+body#homepage #content #mainContent #search #search_inner {
+    background: url(/img/protoimg/box_top.png) no-repeat scroll left bottom transparent !important;
+}
+
+body#homepage #content #mainContent #search_bottom {
+    background: transparent !important;
+}
+
+div.vacancy,
+div#content_header,
+div.side_panel,
+div.full_vacancy,
+div#advanced_search_form { 
+    border: 1px solid #b37ab5;
+    border-radius: 6px;
+    padding: 0px;
+    margin: 0px 0px 20px;
+}
+
+div#full_vacancy .full_vacancy {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#sidebar_content .vacancy_details h2 {
+    margin: 0px;
+}
+
+div#sidebar_content div#search_filters div#salary_range {
+    margin: 5px 30px 5px 15px;
+}
+
+body#homepage div#full_vacancy h1 ,
+body#homepage div.vacancy h3 ,
+body#homepage div.side_panel h3, 
+body#homepage div.side_panel h2,
+body#homepage div#advanced_search_form h1 {
+    border-radius: 5px;
+    background: #b37ab5;
+    padding: 10px;
+    margin: 0px;
+    color: #fff;
+}
+
+div#sidebar_content a.show_advanced_search {
+    margin: 10px;
+    display: block;
+}
+
+div#sidebar_content div#search_filters span.salary_amount {
+    margin-left: 10px;
+}
+
+body#homepage div.vacancy h3 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+div#full_vacancy .full_vacancy p,
+div#content_header {
+    padding: 10px;
+}
+
+body#homepage div.vacancy p,
+body#homepage div#search_info_content p,
+body#homepage div#vacancy_details_content ul,
+body#homepage div.side_panel p,
+body#homepage div.side_panel h4 {
+    margin: 5px 10px 5px;
+}
+
+body#homepage div#vacancy_details_content ul {
+    margin: 10px;
+}
+
+body#homepage div.side_panel label {
+    margin: 0px 10px;
+}
+
+body#homepage div.vacancy p.tools,
+body#homepage div.vacancy p.description {
+    margin: 10px 10px 20px;
+}
+
+body#homepage div#advanced_search_form input.searchBtn {
+	background-image: none;
+	text-align: center;
+	background: #e50278;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #fff !important;
+	padding: 2px 20px 2px !important;
+	margin: 20px;
+    }
+
